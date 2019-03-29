@@ -1,8 +1,9 @@
 ﻿<html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
 	<meta charset="utf-8">
 	<title>
-		俺の音乐播放器
+		东南西北中发白
 	</title>
 	<meta name="viewport" content="width=440,user-scalable=no">
 	<style type="text/css">
@@ -264,12 +265,32 @@
 	<script src="./dist/skPlayer.min.js"></script>
 	<script>
         var player = new skPlayer({
-            autoplay: true,
+            autoplay: false,
             music: {
                 type: 'cloud',
-                source: 165099447
+                source: 2716265172
             }
         });
+	//var player = new skPlayer({
+     //... 可选项配置同上
+    //music: {
+        //type: 'file',
+        //source: [
+            //{
+            //    name: '打呼',
+            //    //必需项,歌名
+            //    author: '潘玮柏&杨丞琳',
+            //    //必需项,歌手
+            //    src: 'xxx.mp3',
+            //    //必需项,音乐文件
+            //    cover: 'xxx.jpg'
+            //    //必需项,封面图片
+            //},
+          //   ... 
+        //]
+    //}
+//});
+		
     </script>
 </body>
 	 
