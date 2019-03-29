@@ -264,6 +264,7 @@
     <div>沉思鬼</div>
 	<script src="./dist/skPlayer.min.js"></script>
 	<script>
+    //自己本地的歌单
     var player = new skPlayer({
          // ... 可选项配置同上
         music: {
@@ -279,16 +280,18 @@
                cover: './img/sudalv.jpg'
                //必需项,封面图片
             },
+            
           ]
         }
     });
-    var player = new skPlayer({
-        autoplay: false,
-        music: {
-            type: 'cloud',
-            source: 2716265172
-        }
-    });
+    // 网易云音乐的歌单
+    // var player = new skPlayer({
+    //     autoplay: false,
+    //     music: {
+    //         type: 'cloud',
+    //         source: 2716265172  网页端网易云歌单链接后面的歌单id
+    //     }
+    // });
 </script>
 </body>
 	 
