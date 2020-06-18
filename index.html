@@ -1,34 +1,61 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>77写给99的情书</title>
-</style>
-</head>
 <body>
-    <div>99</div>
-    <div>想我了吗哈哈</div>
-    <div>我好想你啊啊啊，想见你，想早上起床睁开眼就是你，想亲亲你想抱抱你，想陪你去看电影，想和你去酒店打游戏，最想的还是和你有个我们都羡慕那种房间一起生活</div>
-    <div>真的算起来我们的故事应该是从那天晚上开始的吧，6月2号，我记着这一天，感谢那一天也不想有那一天，感谢是因为成就了你我，讨厌是不想再让你有被逼迫的感觉</div>
-    <div>那天晚上我们聊了挺久，我陪着你安慰你，可能是我的陪伴让你对我动心了吧，但是你不知道，其实是我先对你动心的</div>
-    <div>喜欢上你的性格会让我和你聊天心情好好，喜欢上和你在一起的感觉，喜欢上你的可可爱爱，我确实是先对你心动了</div>
-    <div>后来我知道了你喜欢粉粉可爱的东西，喜欢玩游戏，喜欢好吃的好看的，更喜欢我</div>
-    <div>虽然我们之间差距着空间，但是我相信这是可以解决滴</div>
-    <div>虽然我们之间差距着时间，但是我真的不在乎一点儿，希望你也不要在意啊</div>
-    <div>还有，我真的！真的！真的不会嫌弃你任何地方，我这么喜欢你怎么可能会嫌弃你，倒是希望你不要嫌弃我，我有时候会小心眼是因为太在乎，我会努力为你改变的</div>
-    <div>我太在乎你了，我承认我也不知道这份在乎是从什么时候开始的</div>
-    <div>你问过咱俩的感情，我说我会一直陪着你的，这绝对不是随便说的，我是很认真的，我想陪你到最后！</div>
-    <div>你要记住我一直在你身后，当你需要安慰感到害怕的时候一定要找我，哪怕我也没什么办法，至少我可以陪着你说说话吧</div>
-    <div>虽然我们在一起时间不长但是不用着急呀，我们的路才刚开始</div>
-    <div>公主，我正在迎接你的路上披荆斩棘，请你在这段时间好好照顾自己，等我</div>
-    <div> </div>
-    <div> </div>
-    <div> </div>
-    <div> </div>
-    <div> </div>
-    <div> </div>
-    <div> 123 </div>
-    
-    
+<form method="get" name="f" id="form1">
+<table border="1">
+<tr valign="top">
+<td>你男人姓名：
+<input type="text" id="f_name" name="f_name"><br />
+    年龄：
+<input type="text" id="age" name="age"><br />
+    长的帅不
+            <select name="handsome" id="handsome">
+<option value="非常帅">非常帅</option>
+<option value="一般帅">一般帅</option>
+<option value="有点帅">有点帅</option>
+<option value="特别帅">特别帅</option>
+<option value="帅到爆">帅到爆</option>
+<option value="帅到没法形容">帅到没法形容</option>
+<option value="点点帅">点点帅</option>
+<option value="不怎么帅">不怎么帅</option>
+<option value="不帅">不帅</option>
+<option value="没有答案">没有答案</option>
+</select>
+</td>
+<td align="center">对他说三个字：<br />
+<textarea rows="10" cols="30" id="threeword" name="threeword"></textarea><br />
+<input type="submit" value="提交" onClick="return getMessage();">
+</table>
+</form>
 
+<script type="text/javascript">
+    function getMessage()
+    {
+        var bian2=f.f_name.value;
+        if(bian2=="琪宝"){
+            alert("名字填写正确")
+        }else{
+            alert("小婵婵,你怎么连你男人叫什么都不知道了哟，提示你一下：快递你填的啥名")
+        }
+        var bian3=f.age.value;
+        if(bian3=="18"){
+            alert("年龄回答正确")
+        }else{
+            alert("小婵婵你484傻，你老公有这么老么？？？提示：永远18岁")
+        }
+        var bian4=f.handsome.value;
+        if(bian4=="帅到爆"){
+            alert("确实是帅到爆")
+        }else{
+            alert("周黑鸭，你连你男人有多帅都不知道么？？？提示：帅到爆!")
+        }
+        var bian5=f.threeword.value;
+        if(bian5=="我爱你"){
+            alert("还好你识相")
+        }else{
+            alert("周黑鸭同学，你只能对你男人说我爱你")
+        }
+    }
+</script>
 </body>
 </html>
