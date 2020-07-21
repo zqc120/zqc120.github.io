@@ -1,18 +1,61 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0046)https://www.babelstone.co.uk/Unicode/text.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<link rel="stylesheet" type="text/css" href="./test_files/Unicode.css">
+<script type="text/javascript" src="./test_files/text.js"></script>
+<title>Unicode Text Styler</title>
+</head>
 <body>
-    <div><h2>6圣盾龙神阵容</h2></div>
-    <div>阵容组成：皇子、洛、赵信、妮蔻、厄加特、龙王、索拉卡、露露、艾希（9人口上艾希）</div>
-    <div>前期拿到皇子、洛、赵信、妮蔻等可以先不上放在下面升2星  前期用狐狸、佐伊、波比、杰斯过度 杰斯给青龙刀、蓝buff、盾转、反甲、鬼书都可以</div>
-    <div>3人口狐狸、佐伊、波比  4人口上杰斯（前期主c）  5人口6人口上重装：例如铁男、泰坦  6人口为：狐狸、佐伊、波比、杰斯、铁男（可以换成其他重装）、泰坦，羁绊为4重装3星守2法师</div>
-    <div>攒钱一直升经验，升级了可以换上妮蔻、洛等 8人口如果刷到厄加特 那么阵容更换成6圣盾：皇子、洛、赵信、妮蔻、厄加特、杰斯（盾转）外加任意两个阵容组成中的人 升级到9刷龙王，刷到龙王后给盾转换杰斯</div>
-    <div>最后成型理想装备：厄加特火炮蓝buff青龙刀 龙王圣盾反甲狂徒 其他装备看着给都可以 所有装备只拿肉装（有铲子拿铲子和一个圣盾出来）</div>
-    
-    <div><h2>原计划狙神</h2></div>
-    <div>阵容组成：蕾欧娜、卢锡安、烬、薇恩、蔚、艾瑞莉娅、悟空、锤石、艾克</div>
-    <div>前期3原计划 基本都很好拿 散件装备人手给一个 到后面都可以卖掉换新的、主c薇恩和艾瑞莉娅提莫 薇恩装备：无尽轻语（杀人剑）分裂箭 刀妹装备：蓝buff帽子复活甲 烬装备：无尽轻语复活甲</div>
-    <div>前期3原计划+重装度过前期 蕾欧娜、卢锡安、薇恩都是强势的卡、能拿到3原计划2重装2狙神基本前期可以锁血，等拿到6原计划可以换上6原计划了 装备散件可以分散给每个人 主c用整件</div>
-    <div>前期刷不到6原计划就用重装+狙神过度</div>
-    <div>艾克最后换下剑姬 装备可以给离子火花、冰心、鬼书、红buf、青龙刀都可以</div>
-</body>
-</html>
+<!--h1 title="𝖀𝖓𝖎𝖈𝖔𝖉𝖊 𝕋𝕖𝕩𝕥 𝙎𝙩𝙮𝙡𝙚𝙧">Unicode Text Styler</h1-->
+<p class="left"><img src="./test_files/UnicodeTextStyler.png" title="Unicode Text Styler" alt="&quot;Unicode Text Styler&quot; in fraktur bold, double-struck and sans-serif bold italic styles"></p>
+
+<form name="editform" action="https://www.babelstone.co.uk/Unicode/text.html">
+<p><textarea id="edittext" rows="10" cols="40" autofocus="autofocus" title="Enter text to convert then press one of the buttons below (applies to selected text or all text if there is no selection)" class="large"></textarea></p>
+<p>
+    <input type="button" value="Regular" title="Convert Latin and/or Greek styled text to regular characters" onclick="OnConvert( &#39;Regular&#39; )">
+    <input type="button" value="Bold" title="Convert Latin and/or Greek uppercase and lowercase letters and digits to bold characters" onclick="OnConvert( &#39;Bold&#39; )">
+    <input type="button" value="Italic" title="Convert Latin and/or Greek uppercase and lowercase letters to italic characters" onclick="OnConvert( &#39;Italic&#39; )">
+    <input type="button" value="Bold Italic" title="Convert Latin and/or Greek uppercase and lowercase letters to bold italic characters" onclick="OnConvert( &#39;BoldItalic&#39; )">
+</p>
+<p>
+    <input type="button" value="Sans-serif" title="Convert Latin uppercase and lowercase letters and digits to sans-serif characters" onclick="OnConvert( &#39;SansSerif&#39; )">
+    <input type="button" value="Sans-serif Bold" title="Convert Latin and/or Greek uppercase and lowercase letters and digits to sans-serif bold characters" onclick="OnConvert( &#39;SansSerifBold&#39; )">
+    <input type="button" value="Sans-serif Italic" title="Convert Latin uppercase and lowercase letters to sans-serif italic characters" onclick="OnConvert( &#39;SansSerifItalic&#39; )">
+    <input type="button" value="Sans-serif Bold Italic" title="Convert Latin and/or Greek uppercase and lowercase letters to sans-serif bold italic characters" onclick="OnConvert( &#39;SansSerifBoldItalic&#39; )">
+</p>
+<p>
+    <input type="button" value="Script" title="Convert Latin uppercase and lowercase letters to script characters" onclick="OnConvert( &#39;Script&#39; )">
+    <input type="button" value="Script Bold" title="Convert Latin uppercase and lowercase letters to script bold characters" onclick="OnConvert( &#39;ScriptBold&#39; )">
+    <input type="button" value="Fraktur" title="Convert Latin uppercase and lowercase letters to fraktur characters" onclick="OnConvert( &#39;Fraktur&#39; )">
+    <input type="button" value="Fraktur Bold" title="Convert Latin uppercase and lowercase letters to fraktur bold characters" onclick="OnConvert( &#39;FrakturBold&#39; )">
+    <input type="button" value="Double-struck" title="Convert Latin uppercase and lowercase letters and digits to double-struck characters" onclick="OnConvert( &#39;DoubleStruck&#39; )">
+    <input type="button" value="Monospace" title="Convert Latin uppercase and lowercase letters and digits to monospace characters" onclick="OnConvert( &#39;Monospace&#39; )">
+</p>
+<p>
+    <input type="button" value="Circled" title="Convert Latin uppercase and lowercase letters and digits to circled characters" onclick="OnConvert( &#39;Circled&#39; )">
+    <input type="button" value="Inverse Circled" title="Convert Latin uppercase letters and digits to inverse circled characters" onclick="OnConvert( &#39;InverseCircled&#39; )">
+    <input type="button" value="Squared" title="Convert Latin uppercase letters to squared characters" onclick="OnConvert( &#39;Squared&#39; )">
+    <input type="button" value="Inverse Squared" title="Convert Latin uppercase letters to inverse squared characters" onclick="OnConvert( &#39;InverseSquared&#39; )">
+    <input type="button" value="Parenthesized" title="Convert Latin uppercase and lowercase letters to parenthesized characters" onclick="OnConvert( &#39;Parenthesized&#39; )">
+</p>
+<p>
+    <input type="button" value="Fullwidth" title="Convert Latin characters to fullwidth characters" onclick="OnConvert( &#39;Fullwidth&#39; )">
+    <input type="button" value="Small Capitals" title="Convert Latin uppercase letters to small capital characters (not Q and X)" onclick="OnConvert( &#39;SmallCapitals&#39; )">
+    <input type="button" value="Superscript" title="Convert Latin lowercase letters and digits to superscript characters (not q)" onclick="OnConvert( &#39;Superscript&#39; )">
+    <input type="button" value="Subscript" title="Convert Latin lowercase letters and digits to subscript characters (not b, c, d, f, g, q, w, y, and z)" onclick="OnConvert( &#39;Subscript&#39; )">
+</p>
+<p>
+    <input type="button" value="Regional Indicator Symbols" title="Convert Latin uppercase letters to Regional Indicator Symbol characters (used to represent emoji flag symbols)" onclick="OnConvert( &#39;RegionalIndicatorSymbols&#39; )">
+    <input type="button" value="Tags" title="Convert Latin characters to tag characters (invisible under some operating systems and browsers)" onclick="OnConvert( &#39;Tags&#39; )">
+</p>
+<p><input type="text" id="fonttext" title="Enter exact font name to use then press the button"> <input type="button" value="Set Font" title="Use the specified font" onclick="OnSetFont()"></p></form><p></p>
+<br>
+<p><b>Usage:</b> Enter text to style then press one of the buttons above.  You can apply multiple styles to different parts of the text by selecting parts of the text and pressing the required buttons (if no text is selected the style is applied to the entire text).  Depending on the style you choose, you may convert Latin and/or Greek uppercase or lowercase letters and/or the digits 0-9 (mouseover a button for an explanation of what characters the style will be applied to).  If the text is displayed as square boxes, you may apply a specified font by entering the exact font name to use into the box above and then press "Set Font".</p>
+<br>
+<hr>
+<p class="centre"><a href="https://www.babelstone.co.uk/Unicode/babelmap.html" title="Javascript character map">BabelMap Online</a> | <a href="https://www.babelstone.co.uk/Unicode/unicode.html" title="Unicode Slide Show">Unicode Slide Show</a> | <a href="https://www.babelstone.co.uk/Unicode/whatisit.html" title="What Unicode character is this ?">What Unicode character is this ?</a></p>
+
+
+</body></html>
